@@ -287,10 +287,202 @@
             background: #ffffff !important;
         }
         
+        .skills-grid {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+            gap: 3rem !important;
+            margin-top: 2rem !important;
+        }
+        
+        .skill-category {
+            background: #ffffff !important;
+            padding: 2rem !important;
+            border-radius: 0.75rem !important;
+            border: 1px solid rgba(255, 0, 0, 0.2) !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 15px 35px rgba(255, 0, 0, 0.3) !important;
+            border-color: #ff0000 !important;
+        }
+        
+        .skill-category h3 {
+            font-size: 1.5rem !important;
+            margin-bottom: 1.5rem !important;
+            color: #ff0000 !important;
+            font-weight: 600 !important;
+            text-align: center !important;
+        }
+        
+        .skills-list {
+            display: grid !important;
+            gap: 1rem !important;
+        }
+        
+        .skill-item {
+            display: flex !important;
+            align-items: center !important;
+            gap: 1rem !important;
+            padding: 0.75rem !important;
+            background: rgba(255, 0, 0, 0.05) !important;
+            border-radius: 0.5rem !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .skill-item:hover {
+            background: rgba(255, 0, 0, 0.1) !important;
+            transform: translateX(5px) !important;
+        }
+        
+        .skill-item i {
+            font-size: 1.25rem !important;
+            color: #ff0000 !important;
+            width: 25px !important;
+            text-align: center !important;
+        }
+        
+        .skill-item span {
+            color: #333333 !important;
+            font-weight: 500 !important;
+        }
+        
         .projects {
-            padding: 6rem 2rem !important;
+            padding: 6rem 2rem 12rem 2rem !important;
             min-height: auto !important;
             background: #ffffff !important;
+        }
+        
+        .projects-grid {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+            gap: 2rem !important;
+            margin-top: 2rem !important;
+        }
+        
+        .project-card {
+            background: #ffffff !important;
+            border-radius: 0.75rem !important;
+            overflow: hidden !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+            transition: all 0.3s ease !important;
+            border: 1px solid rgba(255, 0, 0, 0.2) !important;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px) !important;
+            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.3) !important;
+        }
+        
+        .project-image {
+            position: relative !important;
+            height: 250px !important;
+            overflow: hidden !important;
+        }
+        
+        .project-image img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            transition: transform 0.3s ease !important;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.1) !important;
+        }
+        
+        .project-overlay {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            background: rgba(255, 0, 0, 0.9) !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            opacity: 0 !important;
+            transition: opacity 0.3s ease !important;
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1 !important;
+        }
+        
+        .project-links {
+            display: flex !important;
+            gap: 1rem !important;
+        }
+        
+        .project-link {
+            width: 50px !important;
+            height: 50px !important;
+            background: #ffffff !important;
+            color: #ff0000 !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-decoration: none !important;
+            font-size: 1.25rem !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .project-link:hover {
+            background: #ff0000 !important;
+            color: #ffffff !important;
+            transform: scale(1.1) !important;
+        }
+        
+        .project-content {
+            padding: 2rem !important;
+        }
+        
+        .project-content h3 {
+            font-size: 1.5rem !important;
+            margin-bottom: 1rem !important;
+            color: #ff0000 !important;
+            font-weight: 600 !important;
+        }
+        
+        .project-content p {
+            color: #333333 !important;
+            line-height: 1.6 !important;
+            margin-bottom: 1.5rem !important;
+        }
+        
+        .project-tech {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap: 0.5rem !important;
+        }
+        
+        .tech-tag {
+            background: rgba(255, 0, 0, 0.1) !important;
+            color: #ff0000 !important;
+            padding: 0.25rem 0.75rem !important;
+            border-radius: 1rem !important;
+            font-size: 0.85rem !important;
+            font-weight: 500 !important;
+        }
+        
+        .footer {
+            background: #000000 !important;
+            color: #ffffff !important;
+            padding: 2rem 0 !important;
+            text-align: center !important;
+        }
+        
+        .footer-content p {
+            margin-bottom: 0.5rem !important;
+            color: #ffffff !important;
+        }
+        
+        .footer-content p:last-child {
+            margin-bottom: 0 !important;
+            color: #cccccc !important;
         }
         .container {
             max-width: 1200px !important;
@@ -401,7 +593,7 @@
         /* Contact Section Alignment */
         .contact {
             padding: 5rem 2rem !important;
-            background: white!important;
+            background: #ffffff !important;
         }
 
         .contact-content {
@@ -426,7 +618,7 @@
         }
 
         .contact-info p {
-            color: #cbd5e1 !important;
+            color: #333333 !important;
             margin-bottom: 2.5rem !important;
             line-height: 1.7 !important;
             font-size: 1.1rem !important;
@@ -470,7 +662,7 @@
 
         .contact-method a,
         .contact-method span:last-child {
-            color: #d8dee9 !important;
+            color: #333333 !important;
             text-decoration: none !important;
             font-weight: 500 !important;
         }
@@ -507,10 +699,91 @@
         }
 
         .contact-form {
-            background:  #d8dee9 !important;
+            background: #ffffff !important;
             padding: 2.5rem !important;
             border-radius: 0.5rem !important;
-            border: 1px solid rgba(167, 139, 250, 0.2) !important;
+            border: 1px solid rgba(255, 0, 0, 0.2) !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        
+        .form-group {
+            position: relative !important;
+            margin-bottom: 2rem !important;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100% !important;
+            padding: 1rem !important;
+            border: 2px solid #e0e0e0 !important;
+            border-radius: 0.5rem !important;
+            background: #ffffff !important;
+            color: #333333 !important;
+            font-size: 1rem !important;
+            font-family: 'Inter', sans-serif !important;
+            transition: all 0.3s ease !important;
+            outline: none !important;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            box-sizing: border-box !important;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #ff0000 !important;
+            box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.1) !important;
+        }
+        
+        .form-group label {
+            position: absolute !important;
+            top: 1rem !important;
+            left: 1rem !important;
+            color: #999999 !important;
+            font-size: 1rem !important;
+            transition: all 0.3s ease !important;
+            pointer-events: none !important;
+            background: #ffffff !important;
+            padding: 0 0.5rem !important;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        .form-group input:focus + label,
+        .form-group input:valid + label,
+        .form-group textarea:focus + label,
+        .form-group textarea:valid + label {
+            top: -0.5rem !important;
+            left: 0.5rem !important;
+            font-size: 0.85rem !important;
+            color: #ff0000 !important;
+        }
+        
+        .form-group textarea {
+            resize: vertical !important;
+            min-height: 120px !important;
+        }
+        
+        /* Force form visibility */
+        #contact-form {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        #contact-form * {
+            display: inherit !important;
+            visibility: visible !important;
+            opacity: 1 !important;
         }        @media (max-width: 768px) {
             .hero-container {
                 grid-template-columns: 1fr !important;
@@ -786,12 +1059,12 @@
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-rocket"></i>
-                            <span>Performance Optimization</span>
+                            <span>Performance Optimization</span><br><br>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div><br><br>
     </section>
 
     <!-- Projects Section -->
@@ -958,6 +1231,56 @@
             }
         }
         
+        // Contact Form Functionality
+        function initContactForm() {
+            const contactForm = document.getElementById('contact-form');
+            console.log('Contact form element:', contactForm);
+            
+            if (contactForm) {
+                console.log('Contact form found and visible');
+                // Force visibility
+                contactForm.style.display = 'block';
+                contactForm.style.visibility = 'visible';
+                contactForm.style.opacity = '1';
+                
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const subject = formData.get('subject');
+                    const message = formData.get('message');
+                    
+                    // Simple validation
+                    if (!name || !email || !subject || !message) {
+                        alert('Please fill in all fields.');
+                        return;
+                    }
+                    
+                    // You can integrate with a form service here
+                    // For now, we'll just show a success message
+                    alert('Thank you for your message! I will get back to you soon.');
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            } else {
+                console.error('Contact form not found!');
+            }
+            
+            // Also check if contact section exists
+            const contactSection = document.getElementById('contact');
+            console.log('Contact section:', contactSection);
+            
+            if (contactSection) {
+                contactSection.style.display = 'block';
+                contactSection.style.visibility = 'visible';
+                contactSection.style.opacity = '1';
+            }
+        }
+        
         // Smooth Scroll for Navigation
         function initSmoothScroll() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -992,6 +1315,7 @@
             
             // Initialize Red, White & Black theme effects
             createParticles();
+            initContactForm();
             initSmoothScroll();
             initNavbarScroll();
             
