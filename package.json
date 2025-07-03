@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "frontend",
+    "vite"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "Modern Portfolio Website",
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@vitejs/plugin-legacy": "^6.1.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "aos": "^2.3.4",
+    "typed.js": "^2.1.0"
+  }
+}
